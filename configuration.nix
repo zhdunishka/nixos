@@ -1,9 +1,7 @@
 { config, pkgs, ... }: {
 	imports = [
 		./hardware-configuration.nix
-		./nixosModules/app
-      		./nixosModules/service
-      		./nixosModules/system
+		./nixosModules
 	];
 	system.stateVersion = "26.05";
 }
