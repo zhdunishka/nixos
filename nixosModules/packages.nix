@@ -1,11 +1,20 @@
 { config, pkgs, ... }: {
 	nixpkgs.config.allowUnfree = true;
-	programs.nix-ld.enable = true;
 	environment.systemPackages = with pkgs; [
+		firefox
+		discord
+		telegram-desktop
+		obs-studio
+		gparted
+		mpv
+		feh
+		
+		fastfetch
 		git
 		curl
-		xclip
-		steam-run
 		gcc
+		unzip
+		unrar
+		p7zip
 	];
 }

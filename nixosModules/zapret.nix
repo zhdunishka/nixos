@@ -3,7 +3,20 @@
 	after = [ "network-online.target" ];
   	wants = [ "network-online.target" ];
   	wantedBy = [ "multi-user.target" ];
-  	path = [ pkgs.bash pkgs.git pkgs.iptables pkgs.gawk pkgs.coreutils pkgs.nftables pkgs.iproute2 pkgs.gnused pkgs.procps pkgs.which pkgs.gnugrep pkgs.curl ];
+  	path = with pkgs; [
+	bash
+	git
+	iptables
+	gawk
+	coreutils
+	nftables
+	iproute2
+	gnused
+	procps
+	which
+	gnugrep
+	curl
+	];
   	serviceConfig = {
   		Type = "simple";
   		ExecStart = "/home/zhdunishka/zapret-discord-youtube-linux/service.sh run --config /home/zhdunishka/zapret-discord-youtube-linux/conf.env";
