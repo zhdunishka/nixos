@@ -2,12 +2,10 @@
 	imports = [
 	<home-manager/nixos>
 	];
-	
-	home-manager.useGlobalPkgs = true;
-	home-manager.useUserPackages = true;
-	home-manager.users.zhdunishka = { pkgs, ... }: {
-		home.stateVersion = "26.05";
+	home-manager.users.zhdunishka = {
 		imports = [
+		./gnome.nix
 		];
+		home.stateVersion = "26.05";
 	};
 }

@@ -5,9 +5,6 @@
 		discord
 		telegram-desktop
 		obs-studio
-		gparted
-		mpv
-		feh
 		
 		fastfetch
 		git
@@ -16,5 +13,17 @@
 		unzip
 		unrar
 		p7zip
+		eza
+		bat
+		zoxide
+		ripgrep
+		fd
+		fzf
+		sd
+		btop
+		procs
+		duf
+		dust
+		
 	];
 }
