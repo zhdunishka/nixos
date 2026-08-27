@@ -4,6 +4,7 @@
 		./bootloader.nix
 		./envfs.nix
 		./firewall.nix
+                ./fonts.nix
 		./gnome.nix
 		./locales.nix
 		./network.nix

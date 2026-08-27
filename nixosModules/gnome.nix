@@ -1,4 +1,5 @@
 { config, pkgs, ... }: {
+	programs.xwayland.enable = true;
 	programs.dconf.enable = true;
 	services.xserver.xkb = {
 		layout = "us,ru";

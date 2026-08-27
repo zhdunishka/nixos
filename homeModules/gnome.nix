@@ -21,13 +21,19 @@
 				"appindicatorsupport@rgcjonas.gmail.com"
 			];
 		};
-		"org/gnome/wm/keybindings" = {
+		"org/gnome/desktop/wm/keybindings" = {
 			switch-input-source = [ "<Alt>Shift_L" "<Shift>Alt_L" "<Alt>Shift_R" "<Shift>Alt_R" ];
+		};
+	};
+	gtk = {
+		enable = true;
+		iconTheme = {
+			name = "Adwaita";
+			package = pkgs.adwaita-icon-theme;
 		};
 	};
 	home.packages = with pkgs; [
 		gnomeExtensions.appindicator
 		adwaita-icon-theme
-		adwaita-icon-theme-legacy
 		];
 }				
