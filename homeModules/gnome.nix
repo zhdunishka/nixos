@@ -4,7 +4,7 @@
 			color-scheme = "prefer-dark";
 			enable-hot-corners = false;
 			show-battery-percentage = true;
-			icon-theme = "Adwaita";
+			icon-theme = "Papirus-Dark";
 			cursor-theme = "Adwaita";
 		};
 		"org/gnome/desktop/wm/preferences" = {
@@ -29,8 +29,8 @@
 	gtk = {
 		enable = true;
 		iconTheme = {
-			name = "Adwaita";
-			package = pkgs.adwaita-icon-theme;
+			name = "Papirus-Dark";
+			package = pkgs.papirus-icon-theme;
 		};
                 cursorTheme = {
                         name = "Adwaita";
@@ -48,5 +48,6 @@
 	home.packages = with pkgs; [
 		gnomeExtensions.appindicator
 		adwaita-icon-theme
+                papirus-icon-theme
 		];
 }				
