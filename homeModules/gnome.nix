@@ -14,6 +14,7 @@
 		"org/gnome/mutter" = {
 			center-new-windows = true;
 			edge-tiling = true;
+                        experimental-features = [ "xwayland-native-scaling" ];
 		};
 		"org/gnome/shell" = {
 			disable-user-extensions = false;
@@ -31,7 +32,19 @@
 			name = "Adwaita";
 			package = pkgs.adwaita-icon-theme;
 		};
+                cursorTheme = {
+                        name = "Adwaita";
+                        size = 24;
+                };
 	};
+        home.pointerCursor = {
+                enable = true;
+                gtk.enable = true;
+                x11.enable = true;
+                name = "Adwaita";
+                size = 24;
+                package = pkgs.adwaita-icon-theme;
+        };
 	home.packages = with pkgs; [
 		gnomeExtensions.appindicator
 		adwaita-icon-theme

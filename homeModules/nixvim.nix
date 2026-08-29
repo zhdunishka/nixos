@@ -3,10 +3,17 @@
 		enable = true;
 		defaultEditor = true;
 		colorschemes.gruvbox.enable = true;
-		keymaps = [ {
+		keymaps = [
+                        {
                         mode = "i";
                         key = "jk";
                         action = "<Esc>";
+                        options.silent = true;
+                        }
+                        {
+                        mode = "n";
+                        key = "<C-n>";
+                        action = ":Neotree toggle<CR>";
                         options.silent = true;
                         }
                 ];
@@ -63,3 +70,4 @@
 		};	
 	};
 }
+

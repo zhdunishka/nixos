@@ -5,6 +5,7 @@
 		discord
 		telegram-desktop
 		obs-studio
+                portablemc
 		
 		fastfetch
 		git
@@ -24,6 +25,7 @@
 		procs
 		duf
 		dust
-		
+                jdk21
+                glfw
 	];
 }
