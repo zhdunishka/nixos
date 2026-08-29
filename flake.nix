@@ -20,6 +20,7 @@
                                         home-manager.nixosModules.home-manager
                                         {
                                         nix.settings.experimental-features = [ "nix-command" "flakes" ];
+                                        nix.registry.nixpkgs.flake = inputs.nixpkgs;
                                         home-manager.useGlobalPkgs = true;
                                         home-manager.useUserPackages = true;
                                         home-manager.sharedModules = [ nixvim.homeModules.nixvim ];
