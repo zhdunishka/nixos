@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
 	imports = [
-		./bluetooth.nix
+		./anydesk.nix
+                ./bluetooth.nix
 		./bootloader.nix
 		./envfs.nix
 		./firewall.nix

@@ -27,5 +27,6 @@
 		dust
                 jdk21
                 glfw
+                python3
 	];
 }
