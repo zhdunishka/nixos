@@ -6,6 +6,13 @@
 		telegram-desktop
 		obs-studio
                 portablemc
+                anydesk
+                gimp
+                kdePackages.kdenlive
+                libreoffice
+                audacity
+                droidcam
+                lufus
 		
 		fastfetch
 		git
@@ -28,5 +35,6 @@
                 jdk21
                 glfw
                 python3
+                android-tools
 	];
 }
